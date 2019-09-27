@@ -38,21 +38,6 @@
                         </div>
 
 
-
-                        <div class="form-group row">
-                            <label for="kontak" class="col-md-4 col-form-label text-md-right">{{ __('Contact') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="kontak" type="telp" class="form-control @error('kontak') is-invalid @enderror" name="kontak" value="{{ old('kontak') }}" required autocomplete="kontak">
-
-                                @error('Contact')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-<<<<<<< HEAD
                         <div class="form-group row">
                             <label for="kontak" class="col-md-4 col-form-label text-md-right">{{ __('kontak') }}</label>
 
@@ -66,9 +51,6 @@
                                 @enderror
                             </div>
                         </div>
-=======
-                         
->>>>>>> 17ad8f861771ef4eea494bd68047e6a745c8d63e
 
 
                         <div class="form-group row">
@@ -93,44 +75,8 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
-<<<<<<< HEAD
-                        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="form-group col-md-4">
-             <div class="captcha">
-               <span>{!! captcha_img() !!}</span>
-               <button type="button" class="btn btn-success"><i class="fa fa-refresh" id="refresh"></i></button>
-               </div>
-            </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4"></div>
-            <div class="form-group col-md-4">
-             <input id="captcha" type="text" class="form-control" placeholder="Enter Captcha" name="captcha"></div>
-          </div>
-        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="form-group col-md-4">
-            <button type="submit" class="btn btn-success">Submit</button>
-          </div>
-        </div>
-      </form>
-    </div>
-</body>
 
-<script type="text/javascript">
-$('#refresh').click(function(){
-  $.ajax({
-     type:'GET',
-     url:'refreshcaptcha',
-     success:function(data){
-        $(".captcha span").html(data.captcha);
-     }
-  });
-});
-</script>
-</html>
-=======
+                        
                         <div class="form-group row">
                             <label for="captcha" class="col-md-4 col-form-label text-md-right">{{ __('Captcha') }}</label>
 
@@ -150,7 +96,7 @@ $('#refresh').click(function(){
                                 @enderror
                             </div>
                         </div>
->>>>>>> 17ad8f861771ef4eea494bd68047e6a745c8d63e
+
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
@@ -166,4 +112,3 @@ $('#refresh').click(function(){
         </div>
     </div>
 </div>
-@endsection
