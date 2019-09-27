@@ -10,9 +10,14 @@
     "require": {
         "php": "^7.2",
         "fideloper/proxy": "^4.0",
+<<<<<<< HEAD
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0",
         "laravel/ui": "^1.0",
+=======
+        "laravel/framework": "5.8.*",
+        "laravel/tinker": "^1.0",
+>>>>>>> 17ad8f861771ef4eea494bd68047e6a745c8d63e
         "mews/captcha": "^3.0"
     },
     "require-dev": {
