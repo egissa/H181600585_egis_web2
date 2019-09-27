@@ -50,6 +50,42 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+             <div class="captcha">
+               <span>{!! captcha_img() !!}</span>
+               <button type="button" class="btn btn-success"><i class="fa fa-refresh" id="refresh"></i></button>
+               </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+            <div class="form-group col-md-4">
+             <input id="captcha" type="text" class="form-control" placeholder="Enter Captcha" name="captcha"></div>
+          </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+            <button type="submit" class="btn btn-success">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+</body>
+
+<script type="text/javascript">
+$('#refresh').click(function(){
+  $.ajax({
+     type:'GET',
+     url:'refreshcaptcha',
+     success:function(data){
+        $(".captcha span").html(data.captcha);
+     }
+  });
+});
+</script>
+</html>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
