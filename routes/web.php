@@ -16,19 +16,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Route::get('createcaptcha', 'CaptchaController@create');
-Route::post('captcha', 'CaptchaController@captchaValidate');
-Route::get('refreshcaptcha', 'CaptchaController@refreshCaptcha');
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home'); 
-Route::get('my-captcha', 'HomeController@myCaptcha')->name('myCaptcha');
-Route::post('my-captcha', 'HomeController@myCaptchapost')->name('myCaptcha.post');
-Route::get('refresh_captcha', 'HomeController@refresh_captcha')->name('refresh_captcha');
+Route::get('/kategori_artikel','KategoriArtikelController@index')->name('kategori_artikel.index');
+Route::get('refresh_captcha','HomeController@refreshCaptcha')->name('refresh_captcha');

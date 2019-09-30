@@ -4,11 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
     "content-hash": "ee53765902567afb76b49cadbf1aee6e",
-=======
-    "content-hash": "1698b8d779d609956db9bc3697b9fac4",
->>>>>>> 17ad8f861771ef4eea494bd68047e6a745c8d63e
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1033,7 +1029,6 @@
         },
         {
             "name": "monolog/monolog",
-<<<<<<< HEAD
             "version": "2.0.0",
             "source": {
                 "type": "git",
@@ -1044,18 +1039,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/Seldaek/monolog/zipball/68545165e19249013afd1d6f7485aecff07a2d22",
                 "reference": "68545165e19249013afd1d6f7485aecff07a2d22",
-=======
-            "version": "1.25.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "70e65a5470a42cfec1a7da00d30edb6e617e8dcf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/70e65a5470a42cfec1a7da00d30edb6e617e8dcf",
-                "reference": "70e65a5470a42cfec1a7da00d30edb6e617e8dcf",
->>>>>>> 17ad8f861771ef4eea494bd68047e6a745c8d63e
                 "shasum": ""
             },
             "require": {
@@ -1123,11 +1106,7 @@
                 "logging",
                 "psr-3"
             ],
-<<<<<<< HEAD
             "time": "2019-08-30T09:56:44+00:00"
-=======
-            "time": "2019-09-06T13:49:17+00:00"
->>>>>>> 17ad8f861771ef4eea494bd68047e6a745c8d63e
         },
         {
             "name": "nesbot/carbon",

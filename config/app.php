@@ -135,7 +135,6 @@ return [
     */
 
     'providers' => [
-        Mews\Captcha\CaptchaServiceProvider::class,
 
         /*
          * Laravel Framework Service Providers...
@@ -191,7 +190,6 @@ return [
     */
 
     'aliases' => [
-        'Captcha' => Mews\Captcha\Facades\Captcha::class,
 
         'App' => Illuminate\Support\Facades\App::class,
         'Arr' => Illuminate\Support\Arr::class,

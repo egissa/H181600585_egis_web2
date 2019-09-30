@@ -11,9 +11,5 @@ trim_trailing_whitespace = true
 [*.md]
 trim_trailing_whitespace = false
 
-<<<<<<< HEAD
 [*.{yml,yaml}]
-=======
-[*.yml]
->>>>>>> 17ad8f861771ef4eea494bd68047e6a745c8d63e
 indent_size = 2

@@ -23,11 +23,13 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div><div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Email') }}</label>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -36,7 +38,6 @@
                                 @enderror
                             </div>
                         </div>
-
 
                         <div class="form-group row">
                             <label for="kontak" class="col-md-4 col-form-label text-md-right">{{ __('kontak') }}</label>
@@ -67,7 +68,6 @@
                             </div>
                         </div>
 
-
                         <div class="form-group row">
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
 
@@ -77,38 +77,39 @@
                         </div>
 
                         
-                        <div class="form-group row">
-                            <label for="captcha" class="col-md-4 col-form-label text-md-right">{{ __('Captcha') }}</label>
-
-                            <div class="col-md-6">
-                                <div class="captcha">
-                                    <img src="{{captcha_src('flat')}}" onclick="this.src='/captcha/flat?'+Math.random()" id="captchaCode" alt="" class="captcha">
-                                    <a rel="nofollow" href="javascript:;" onclick="document.getElementById('captchaCode').src='captcha/flat?'+Math.random()" class="refresh">
-                                        <button type="button" class="btn btn-success btn-refresh">Refresh</button>
-                                    </a>
-                                </div>
-                                <input id="captcha" type="captcha" class="form-control mt-2 @error('captcha') is-invalid @enderror" name="captcha" placeholder="Enter Captcha">
-
-                                @error('captcha')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
+                        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+             <div class="captcha">
+               <span>{!! captcha_img() !!}</span>
+               <button type="button" class="btn btn-success btn-refresh">refresh</button>
+               </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+            <div class="form-group col-md-4">
+             <input id="captcha" type="text" class="form-control" placeholder="Enter Captcha" name="captcha"></div>
+          </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+            <button type="submit" class="btn btn-success">Submit</button>
+          </div>
+        </div>
                         </div>
-
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Daftar') }}
+                                    {{ __('Register') }}
                                 </button>
                             </div>
                         </div>
-
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+@endsection
