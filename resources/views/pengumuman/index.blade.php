@@ -6,12 +6,11 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">kategoriartikel</div>
+                <div class="card-header">pengumuman</div>
 
                 <div class="card-body">
-                <a href="{!! route ('kategori_artikel.create')!!}" class="btn  btn-sm btn-primary">
-                Tambah Data
-                </a>
+                <a href="{!! route ('pengumuman.create')!!}" class="btn  btn-sm btn-primary">
+                Tambah Data</a>
 
                 <body>
         <table border = '1'>
@@ -25,18 +24,20 @@
         </tr>
 
 
-        @foreach($listKategoriArtikel as $item)
+        @foreach($listpengumuman as $item)
 
         <tr>
 
         <td>{!! $item->id!!}</td>
-        <td>{!! $item->nama!!}</td>
+        <td>{!! $item->judul!!}</td>
         <td>{!! $item->users_id!!}</td>
         <td>{!! $item->created_at->format('d/m/Y H:i')!!}</td>
+        
         <td>
-        <a href="{!! route('kategori_artikel.show',[$item->id]) !!}" class="btn  btn-sm btn-primary">bosque</a>
-        </td>
-
+        <a href="{!! route('pengumuman.show',[$item->id]) !!}" class="btn  btn-sm btn-primary">bosque</a>
+        
+        
+       
         </tr>
         
         @endforeach

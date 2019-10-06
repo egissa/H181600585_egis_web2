@@ -4,21 +4,15 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-
-class KategoriArtikel extends Model
+class berita extends Model
 {
-    protected $table ='kategori_artikel';
+    protected $table ='berita';
 
     protected $fillable =[
-        'nama','users_id'
+        'judul','users_id'
     ];
-    
-
 
     protected $casts=[
         
     ];
-        
-    };
-    
-
+}
