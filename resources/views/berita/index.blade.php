@@ -19,7 +19,9 @@
         <td>ID</td>
         <td>Nama</td>
         <td>Users</td>
+        <td>Kategori Berita ID</td>
         <td>Create</td>
+        <td>Update</td>
         <td>Klik Here</td>
 
         </tr>
@@ -30,9 +32,11 @@
         <tr>
 
         <td>{!! $item->id!!}</td>
-        <td>{!! $item->isi!!}</td>
+        <td>{!! $item->judul!!}</td>
         <td>{!! $item->users_id!!}</td>
+        <td>{!! $item->kategori_berita_id!!}</td>
         <td>{!! $item->created_at->format('d/m/Y H:i')!!}</td>
+        <td>{!! $item->updated_at->format('d/m/Y H:i')!!}</td>
         <td>
         <a href="{!! route('berita.show',[$item->id]) !!}" class="btn  btn-sm btn-primary">bosque</a>
         </td>

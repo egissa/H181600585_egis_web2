@@ -1,7 +1,7 @@
 @csrf
 <div class="container">
                      <div class="form-group row">
-                            <label for="judul" class="col-md-4 col-form-label text-md-right">{{ __('Nama') }}</label>
+                            <label for="judul" class="col-md-4 col-form-label text-md-right">{{ __('Judul') }}</label>
 
                             <div class="col-md-6">
                                 <input id="judul" type="text" class="form-control @error('judul') is-invalid @enderror" name="judul" value="{{ old('judul') }}" required autofocus>
@@ -13,6 +13,33 @@
                                 @enderror
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <label for="isi" class="col-md-4 col-form-label text-md-right">{{ __('Isi') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="isi" type="text" class="form-control @error('judul') is-invalid @enderror" name="isi" value="{{ old('isi') }}" required autofocus>
+
+                                @error('isi')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="kategori_artikel_id" class="col-md-4 col-form-label text-md-right">{{ __(' Kategori Artikel ID') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="kategori_artikel_id" type="text" class="form-control @error('kategori_artikel_id') is-invalid @enderror" name="kategori_artikel_id" value="{{ old('kategori_artikel_id') }}" required autofocus>
+
+                                @error('kategori_artikel_id')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
 
                         <div class="form-group row">
                            

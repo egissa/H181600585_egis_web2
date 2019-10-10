@@ -10,42 +10,57 @@
 
                 <div class="card-body">
 <body>
-<div class="form-group row">
+                <div class="form-group row">
 
-<label  class="col-md-4 col-form-label text-md-right">ID</label>
-<label  class="col-md-8 col-form-label text-md-left">{!! $berita->id !!}</label>
+                    <label  class="col-md-4 col-form-label text-md-right">ID</label>
+                    <label  class="col-md-8 col-form-label text-md-left">{!! $berita->id !!}</label>
 
-</div>
+                </div>
 
-<div class="form-group row">
+                <div class="form-group row">
 
-<label  class="col-md-4 col-form-label text-md-right">Nama</label>
-<label  class="col-md-8 col-form-label text-md-left">{!! $berita->isi !!}</label>
+                <label  class="col-md-4 col-form-label text-md-right">Nama</label>
+                <label  class="col-md-8 col-form-label text-md-left">{!! $berita->judul !!}</label>
 
-</div>
+                </div>
 
-<div class="form-group row">
+                <div class="form-group row">
 
-<label  class="col-md-4 col-form-label text-md-right">Users id</label>
-<label  class="col-md-8 col-form-label text-md-left">{!! $berita->users_id !!}</label>
+                <label  class="col-md-4 col-form-label text-md-right">keterangan</label>
+                <label  class="col-md-8 col-form-label text-md-left">{!! $berita->isi!!}</label>
 
-</div>
+                </div>
 
-<div class="form-group row">
+                <div class="form-group row">
 
-<label  class="col-md-4 col-form-label text-md-right">create</label>
-<label  class="col-md-8 col-form-label text-md-left">{!! $berita->created_at->format ('d/m/Y H:i') !!}</label>
+                <label  class="col-md-4 col-form-label text-md-right">users_id</label>
+                <label  class="col-md-8 col-form-label text-md-left">{!! $berita->users_id!!}</label>
 
-</div>
+                </div>
+                <div class="form-group row">
 
-<div class="form-group row">
+                <label  class="col-md-4 col-form-label text-md-right">create</label>
+                <label  class="col-md-8 col-form-label text-md-left">{!! $berita->created_at->format ('d/m/Y H:i') !!}</label>
 
-<label  class="col-md-4 col-form-label text-md-right">update</label>
-<label  class="col-md-8 col-form-label text-md-left">{!! $berita->updated_at->format ('d/m/Y H:i') !!}</label>
+                </div>
 
-</div>
+                <div class="form-group row">
 
-<div class="form-group row mb-0">
+                <label  class="col-md-4 col-form-label text-md-right">update</label>
+                <label  class="col-md-8 col-form-label text-md-left">{!! $berita->updated_at->format ('d/m/Y H:i') !!}</label>
+
+                </div>
+
+
+                <div class="form-group row">
+
+                <label  class="col-md-4 col-form-label text-md-right">Kategori berita ID</label>
+                <label  class="col-md-8 col-form-label text-md-left">{!! $berita->kategori_berita_id !!}</label>
+
+                </div>
+
+              
+         <div class="form-group row mb-0">
             <div class="col-md-6 offset-md-4">
                 
                 <a href="{!! route('berita.index') !!}" class="btn btn-primary">

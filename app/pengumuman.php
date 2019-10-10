@@ -9,7 +9,7 @@ class pengumuman extends Model
     protected $table ='pengumuman';
 
     protected $fillable =[
-        'judul','users_id'
+        'judul','isi','users_id','kategori_pengumuman_id'
     ];
     
 

@@ -21,6 +21,8 @@ class galericontroller extends Controller
     
     }
     public function create(){
+         $galeri=galeri::pluck('judul','isi','kategori_galeri_id');    
+
 
         return view ('galeri.create');
     }

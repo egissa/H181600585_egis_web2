@@ -22,14 +22,19 @@ class beritacontroller extends Controller
     }
 
     public function create(){
+        $berita=berita::pluck('judul','isi','kategori_artikel_id');
 
         return view ('berita.create');
     }
         public function store(request $request){
+            
         
             $input= $request->all();
     
             berita::create($input);
+                
+
+       
     
     
         return redirect(route('berita.index'));

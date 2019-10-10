@@ -21,7 +21,7 @@ class artikelcontroller extends Controller
     }
 
         public function create(){
-        $artikel=artikel::pluck('judul','isi','kategori_artikel.id');    
+        $artikel=artikel::pluck('judul','isi','kategori_artikel_id');    
 
         return view ('artikel.create',compact('artikel'));
     }

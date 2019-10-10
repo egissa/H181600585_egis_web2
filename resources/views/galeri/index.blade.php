@@ -18,8 +18,12 @@
         <tr>
         <td>ID</td>
         <td>Nama</td>
-        <td>Users</td>
+        <td>keterangan</td>
+        <td>path</td>
+        <td>users_id</td>
         <td>Create</td>
+        <td>update</td>
+        <td>kategori_galeri_id</td>
         <td>klik</td>
 
         </tr>
@@ -31,8 +35,12 @@
 
         <td>{!! $item->id!!}</td>
         <td>{!! $item->nama!!}</td>
+        <td>{!! $item->keterangan!!}</td>
+        <td>{!! $item->path!!}</td>
         <td>{!! $item->users_id!!}</td>
         <td>{!! $item->created_at->format('d/m/Y H:i')!!}</td>
+        <td>{!! $item->updated_at->format('d/m/Y H:i')!!}</td>
+        <td>{!! $item->kategori_galeri_id!!}</td>
         
         <td>
         <a href="{!! route('galeri.show',[$item->id]) !!}" class="btn  btn-sm btn-primary">bosque</a>

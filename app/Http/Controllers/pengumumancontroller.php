@@ -21,6 +21,8 @@ class pengumumancontroller extends Controller
     
     }
     public function create(){
+        $pengumuman=pengumuman::pluck('judul','isi','kategori_pengumuman_id');    
+
 
         return view ('pengumuman.create');
     }
